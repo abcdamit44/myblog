@@ -7,7 +7,7 @@ from pydantic import EmailStr
 
 class PostBase(SQLModel):
     title: str = Field(index=True)
-    author_name: Optional[str] = Field(default="mezgoodle")
+    author_name: Optional[str] = Field(default="myBlog")
     body: str
 
 
