@@ -11,7 +11,8 @@ app.include_router(posts.router)
 app.include_router(users.router)
 app.include_router(authentication.router)
 
-origins = ["https://meziblog.vercel.app", "https://meziblog.vercel.app:3000"]
+
+origins = ["*"]
 
 app.add_middleware(
     CORSMiddleware,
